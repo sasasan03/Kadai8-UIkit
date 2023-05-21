@@ -16,6 +16,8 @@
 		69CB88792A19C5C100560E01 /* Kadai8_UIkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB88782A19C5C100560E01 /* Kadai8_UIkitTests.swift */; };
 		69CB88832A19C5C100560E01 /* Kadai8_UIkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB88822A19C5C100560E01 /* Kadai8_UIkitUITests.swift */; };
 		69CB88852A19C5C100560E01 /* Kadai8_UIkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB88842A19C5C100560E01 /* Kadai8_UIkitUITestsLaunchTests.swift */; };
+		69CB88922A19CEDC00560E01 /* CyanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB88912A19CEDC00560E01 /* CyanViewController.swift */; };
+		69CB88942A19CEFC00560E01 /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB88932A19CEFC00560E01 /* OrangeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		69CB887E2A19C5C100560E01 /* Kadai8-UIkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kadai8-UIkitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CB88822A19C5C100560E01 /* Kadai8_UIkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai8_UIkitUITests.swift; sourceTree = "<group>"; };
 		69CB88842A19C5C100560E01 /* Kadai8_UIkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kadai8_UIkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69CB88912A19CEDC00560E01 /* CyanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyanViewController.swift; sourceTree = "<group>"; };
+		69CB88932A19CEFC00560E01 /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				69CB88612A19C5C100560E01 /* AppDelegate.swift */,
 				69CB88632A19C5C100560E01 /* SceneDelegate.swift */,
 				69CB88652A19C5C100560E01 /* ViewController.swift */,
+				69CB88912A19CEDC00560E01 /* CyanViewController.swift */,
+				69CB88932A19CEFC00560E01 /* OrangeViewController.swift */,
 				69CB88672A19C5C100560E01 /* Main.storyboard */,
 				69CB886A2A19C5C100560E01 /* Assets.xcassets */,
 				69CB886C2A19C5C100560E01 /* LaunchScreen.storyboard */,
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CB88662A19C5C100560E01 /* ViewController.swift in Sources */,
+				69CB88942A19CEFC00560E01 /* OrangeViewController.swift in Sources */,
+				69CB88922A19CEDC00560E01 /* CyanViewController.swift in Sources */,
 				69CB88622A19C5C100560E01 /* AppDelegate.swift in Sources */,
 				69CB88642A19C5C100560E01 /* SceneDelegate.swift in Sources */,
 			);
