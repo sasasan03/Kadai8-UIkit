@@ -11,17 +11,25 @@ class CyanViewController: UIViewController {
 
     @IBOutlet weak var slider1: UISlider!
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label1: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func changeSlider(_ sender: Any) {
-        self.label.text = "\(self.slider1.value)"
+    let delegate = UIApplication.shared.delegate as? AppDelegate
+    
+    @IBAction func changeSlider1(_ sender: Any) {
+        self.label1.text = "\(self.slider1.value)"
+        delegate?.sliderValue = self.slider1.value
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.slider1.value = delegate?.sliderValue ?? 0.5
+        self.label1.text = "\(self.slider1.value)"
     }
     
     /*

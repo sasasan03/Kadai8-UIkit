@@ -21,11 +21,14 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="le9-63-1iS"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="changeSlider2:" destination="joO-Cg-b5m" eventType="valueChanged" id="RQb-b8-l7N"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo3-PW-38H">
-                                <rect key="frame" x="180" y="209" width="45" height="21"/>
+                                <rect key="frame" x="180" y="209" width="43.333333333333343" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="0bI-S2-sQX"/>
+                                    <constraint firstAttribute="width" secondItem="Xo3-PW-38H" secondAttribute="height" multiplier="43:21" id="P63-K5-cVh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -42,6 +45,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="laV-vL-bna"/>
+                    <connections>
+                        <outlet property="label2" destination="Xo3-PW-38H" id="LUJ-H8-waU"/>
+                        <outlet property="slider2" destination="vEE-CS-mUJ" id="AJE-BG-6sq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjg-f9-uBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +68,7 @@
                                     <constraint firstAttribute="width" constant="300" id="diP-LI-CB2"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="changeSlider:" destination="rfq-io-4EC" eventType="valueChanged" id="ob3-Fc-sA8"/>
+                                    <action selector="changeSlider1:" destination="rfq-io-4EC" eventType="valueChanged" id="ob3-Fc-sA8"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFK-DX-ea4">
@@ -85,7 +92,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="u43-q0-K7A"/>
                     <connections>
-                        <outlet property="label" destination="DFK-DX-ea4" id="2im-bZ-zlF"/>
+                        <outlet property="label1" destination="DFK-DX-ea4" id="2im-bZ-zlF"/>
                         <outlet property="slider1" destination="sF8-f0-4VH" id="zSV-qd-q2l"/>
                     </connections>
                 </viewController>
