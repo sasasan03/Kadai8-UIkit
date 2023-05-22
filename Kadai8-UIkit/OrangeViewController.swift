@@ -29,6 +29,7 @@ class OrangeViewController: UIViewController {
         super.viewWillAppear(animated)
         self.slider2.value = delegate?.sliderValue ?? 0.65
         self.label2.text = "\(self.slider2.value)"
+        print("test")
     }
     
     
