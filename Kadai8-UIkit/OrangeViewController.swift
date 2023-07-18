@@ -29,18 +29,6 @@ class OrangeViewController: UIViewController {
         super.viewWillAppear(animated)
         self.slider2.value = delegate?.sliderValue ?? 0.65
         self.label2.text = "\(self.slider2.value)"
-        print("test")
+        print("🍹：viewwillApperが呼ばれました")
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -18,7 +18,7 @@ class CyanViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+    //MARK: AppDelegateクラスをインスタンス化する。sharedはシングルトン。
     let delegate = UIApplication.shared.delegate as? AppDelegate
     
     @IBAction func changeSlider1(_ sender: Any) {
@@ -27,19 +27,9 @@ class CyanViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        print("🍔：viewwillApperが呼ばれました")
         super.viewWillAppear(animated)
         self.slider1.value = delegate?.sliderValue ?? 0.5
         self.label1.text = "\(self.slider1.value)"
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
